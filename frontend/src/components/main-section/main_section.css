@@ -1,0 +1,16 @@
+.list-image {
+
+    width: 200px;
+    height: 200px;
+}
+
+.remove-btn {
+
+    margin-top: 16px;
+    background-color: #f76434;
+}
+
+.remove-btn:hover {
+
+    background-color: #faad00;
+}
