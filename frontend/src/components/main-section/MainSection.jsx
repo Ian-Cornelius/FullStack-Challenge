@@ -33,7 +33,7 @@ export default function MainSection() {
 
     /**
      * 
-     * @param {Book} book 
+     * @param {Book} selectedBook 
      */
     function unassignBook(selectedBook){
 
