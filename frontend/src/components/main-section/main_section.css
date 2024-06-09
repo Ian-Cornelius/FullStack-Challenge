@@ -14,3 +14,12 @@
 
     background-color: #faad00;
 }
+
+@media screen and (max-width:900px){
+
+    .list-image {
+
+        width: 124px;
+        height: 124px;
+    }
+}

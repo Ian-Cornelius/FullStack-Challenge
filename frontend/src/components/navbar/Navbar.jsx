@@ -4,8 +4,8 @@ import TeacherAvatar from "../../assets/teacher.jpg"
 
 export default function Navbar() {
   return (
-    <Box variant="div" sx={{ position: "relative", py: { xs: "20px", sm: "20px", md: "24px", lg: "24px" }, px: "24px", zIndex: "20" }}>
-        <Box variant="div" sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", position: "sticky", top: "0" }}>
+    <Box variant="div" sx={{ position: "sticky", top: "0", bgcolor: "white", py: { xs: "20px", sm: "20px", md: "24px", lg: "24px" }, px: "24px", zIndex: "20" }}>
+        <Box variant="div" sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
             <img className='logo' src='../ello_logo.svg'/>
             <Box variant="div" sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "16px" }}>
                 <Typography sx={{ height: "max-content", fontFamily: "Mulish", fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem", lg: "1rem" } }}>Teacher Raychelle</Typography>

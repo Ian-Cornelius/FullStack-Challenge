@@ -100,6 +100,10 @@ export default function FindABook({ assignBook }) {
                     </Box>
                 }
 
+                { error &&  
+                    <Typography variant='p' sx={{ fontWeight: "600", fontSize: { xs: "0.85rem", sm: "0.85rem", md: "1rem", lg: "1rem" }, fontFamily: "Mulish" }}>Failed to load data. Please refresh</Typography>
+                }
+
                 { matchingBooks.length !== 0 &&
 
                     (<Box variant="div" sx={{ marginTop: { xs: "24px", sm: "24px", md: "32px", lg: "32px" } }}>

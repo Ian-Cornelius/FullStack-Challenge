@@ -60,19 +60,19 @@ export default function MainSection() {
                 <FindABook assignBook={assignBook}/>
             </Box>
             <Box variant="div" sx={{ marginTop: "64px", width: "auto !important" }}>
-                <Typography sx={{ fontWeight: "900", fontSize: "2.2rem", color: "#fabd33", fontFamily: "Mulish" }}>Current Reading List</Typography>
-                <Box variant="div" sx={{ py: "56px" }}>
-                    <Box variant="div" sx={{ bgcolor: "rgba(255,230,220,.39)", p: "32px", borderRadius: "24px", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(38%, 1fr))", gap: "80px" }}>
+                <Typography sx={{ fontWeight: "900", fontSize: { xs: "1.6rem", sm: "1.6rem", md: "2.2rem", lg: "2.2rem" }, color: "#fabd33", fontFamily: "Mulish" }}>Current Reading List</Typography>
+                <Box variant="div" sx={{ py: { xs: "40px", sm: "40px", md: "56px", lg: "56px" } }}>
+                    <Box variant="div" sx={{ bgcolor: "rgba(255,230,220,.39)", p: { xs: "8px", sm: "8px", md: "32px", lg: "32px" }, borderRadius: { xs: "16px", sm: "16px", md: "24px", lg: "24px" }, display: "grid", gridTemplateColumns: { xs: "repeat(auto-fill, minmax(100%, 1fr))", sm: "repeat(auto-fill, minmax(38%, 1fr))", md: "repeat(auto-fill, minmax(38%, 1fr))", lg: "repeat(auto-fill, minmax(38%, 1fr))" }, gap: { xs: "32px", sm: "32px", md: "80px", lg: "80px" } }}>
                         { readingList.length === 0 && (
-                            <Typography sx={{ fontWeight: "600", fontSize: "1.1rem", fontFamily: "Mulish" }}>No books assigned</Typography>
+                            <Typography sx={{ fontWeight: "600", fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1.1rem", lg: "1.1rem" }, fontFamily: "Mulish" }}>No books assigned</Typography>
                         ) }
                         { readingList.map((book) => (
 
-                            <Box key={book.id} variant="div" sx={{ display: "flex", flexDirection: "row", gap: "24px" }}>
+                            <Box key={book.id} variant="div" sx={{ display: "flex", flexDirection: "row", gap: { xs: "16px", sm: "16px", md: "24px", lg: "24px" } }}>
                                 <img className='search-image list-image' src={book.coverPhotoURL}/>
                                 <Box variant="div" sx={{ alignSelf: "end", height: "max-content !important" }}>
-                                    <Typography sx={{ fontWeight: "600", fontSize: "1.1rem", fontFamily: "Mulish" }}>{book.title}</Typography>
-                                    <Typography sx={{ fontWeight: "300", fontSize: "1rem", fontFamily: "Mulish", marginTop: "8px" }}>{book.author}</Typography>
+                                    <Typography sx={{ fontWeight: "600", fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1.1rem", lg: "1.1rem" }, fontFamily: "Mulish" }}>{book.title}</Typography>
+                                    <Typography sx={{ fontWeight: "300", fontSize: { xs: "0.85rem", sm: "0.85rem", md: "1rem", lg: "1rem" }, fontFamily: "Mulish", marginTop: "8px" }}>{book.author}</Typography>
                                     <button className='assign-btn remove-btn' onClick={(e) => unassignBook(book)}>Remove</button>
                                 </Box>
                             </Box>
